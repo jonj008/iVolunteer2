@@ -10,6 +10,7 @@ public class UserClass {
     private String first_name;
     private String last_name;
     private String username;
+    private String local_user;
     private String org_name;
     private String password;
     private int attended_events;
@@ -26,6 +27,7 @@ public class UserClass {
         first_name = first;
         last_name = last;
         username = u_name;
+        local_user = u_name;
         this.password = password;
         attended_events = 0;
         pending_events = 0;
@@ -42,6 +44,12 @@ public class UserClass {
 
         return username;
     }
+
+    String getLocal_user(){
+
+        return local_user;
+    }
+
     String getFirst_name(){
 
         return first_name;
